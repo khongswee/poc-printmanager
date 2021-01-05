@@ -25,6 +25,11 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
 
+before_script:
+  - mkdir -p "$ANDROID_HOME/licenses"
+  - cp ./android-licenses/ "$ANDROID_HOME/licenses/"
+
+
 licenses:
    - '.+'
 
