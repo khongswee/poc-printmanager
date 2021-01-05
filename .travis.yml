@@ -46,5 +46,3 @@ deploy:
   on:
     repo:  khongswee/poc-printmanager
     jdk: oraclejdk8
-  api_key:
-    secure: 8563273043aef395a8b461e5522328a86335456e
