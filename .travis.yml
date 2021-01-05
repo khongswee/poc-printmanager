@@ -38,8 +38,7 @@ script:
 
 deploy:
   provider: releases
-  api_key:
-    secure: "e171d71c566c257b2130e31f074a10e1d8b39c89"
+  api_key: qFr5DBRUwvfE7LObXOJoWg
   file: app/build/outputs/apk/release/*
   file_glob: true
   skip_cleanup: true
