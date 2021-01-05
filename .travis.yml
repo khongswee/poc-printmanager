@@ -37,7 +37,7 @@ script:
   ./gradlew clean build
 
 deploy:
-   - provider: releases
+    provider: releases
     api_key: 8563273043aef395a8b461e5522328a86335456e
     file: app/build/outputs/apk/release/*
     file_glob: true
