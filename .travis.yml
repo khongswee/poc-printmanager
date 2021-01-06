@@ -29,6 +29,7 @@ licenses:
 script:
   ./gradlew clean build
 
+
   deploy:
   provider: releases
   file_glob: true
