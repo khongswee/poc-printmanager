@@ -29,13 +29,14 @@ licenses:
 script:
   ./gradlew clean build
 
-deploy:
+  deploy:
   provider: releases
-  api_key: 58277ca4afcaf191e1068ca5389a34e7b965479b
-  file: app/build/outputs/apk/*.apk
   file_glob: true
+  file: app/build/outputs/apk/*.apk
   skip_cleanup: true
 
   on:
-    repo:  khongswee/poc-printmanager
+    repo: khongswee/poc-printmanager
     jdk: oraclejdk8
+  api_key:
+    secure: 58277ca4afcaf191e1068ca5389a34e7b965479b
