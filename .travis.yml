@@ -38,7 +38,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: qFr5DBRUwvfE7LObXOJoWg
+  api_key: ydeF7UY48cHS66X79zzq
   file: app/build/outputs/apk/release/*
   file_glob: true
   skip_cleanup: true
