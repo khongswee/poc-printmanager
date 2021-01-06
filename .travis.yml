@@ -8,13 +8,6 @@ branches:
   only:
     - master
 
-before_install:
-  # linux
-  - |
-    wget -qO- "https://github.com/crazy-max/travis-wait-enhanced/releases/download/v1.0.0/travis-wait-enhanced_1.0.0_linux_x86_64.tar.gz" | tar -zxvf - travis-wait-enhanced
-    mv travis-wait-enhanced /home/travis/bin/
-    travis-wait-enhanced --version
-
 android:
   components:
     - tools
@@ -38,8 +31,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: 
-     secure: 58277ca4afcaf191e1068ca5389a34e7b965479b
+  api_key: 58277ca4afcaf191e1068ca5389a34e7b965479b
   file: app/build/outputs/apk/release/*
   file_glob: true
   skip_cleanup: true
