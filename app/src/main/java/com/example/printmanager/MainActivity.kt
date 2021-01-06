@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding.btPrint.setOnClickListener {
             showPreviewViaPrintManager()
         }
-        Log.d("State:","onCreat")
+        Log.d("State:","onCreate")
         Toast.makeText(this,"State:onCreate",Toast.LENGTH_LONG).show()
     }
 
